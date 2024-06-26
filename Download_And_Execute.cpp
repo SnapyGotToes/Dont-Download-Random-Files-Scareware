@@ -27,7 +27,7 @@ int main() {
 
     std::cout << "I need to download assets, please give me 5 minutes\n";
 
-    const char* cmd = "start \"\" \" ""Put your download link here"" \"";
+    const char* cmd = "start \"\" \" Put your download link here \"";
     if (std::system(cmd) != 0) {
       std::cout << "Download Failed... Retrying 5 mores times...\n";
       for (int i = 5; i >= 0; i++) {
